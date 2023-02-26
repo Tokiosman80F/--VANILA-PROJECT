@@ -2,6 +2,8 @@ const quoteContainer = document.getElementById("quote-container");
 const quoteText = document.getElementById("quote");
 const authorText = document.getElementById("author");
 const twitterBtn = document.getElementById("twitter");
+// fb
+const facebookBtn = document.getElementById("facebook");
 const newQuoteBtn = document.getElementById("new-quote");
 const loader = document.getElementById("loader");
 //global variable
@@ -50,8 +52,16 @@ function tweetQuote() {
   window.open(twitterUrl, "_blank");
 }
 
+function shareFB() {
+  const fbUrl = `https://www.facebook.com/dialog/share?display=${quoteText.textContent} -${authorText.textContent}`;
+  console.log("Hi");
+
+  window.open(fbUrl, "_blank");
+}
+
 newQuoteBtn.addEventListener("click", newQuote);
 twitterBtn.addEventListener("click", tweetQuote);
+facebookBtn.addEventListener("click", shareFB);
 //on load
 getQuote();
 

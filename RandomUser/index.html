@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-900">
+
+    <section class="max-w-6xl mx-auto text-center">
+        <div class=" py-10 rounded-xl">
+
+            <h1 class="text-5xl text-white font-thin uppercase ">Choose Your <span
+                    class="text-red-500 font-semibold">Dating
+                    Partner</span>
+                😭
+            </h1>
+        </div>
+        <!-- PROFILE -->
+        <div id="profile " class="flex flex-col  item-center text-white ">
+            <div class="w-32 mx-auto">
+                <img src="" alt="" class="rounded-full" id="pro-img">
+            </div>
+            <!-- DESCRIPTION -->
+            <div class="flex flex-col mx-auto gap-4">
+                <div>
+                    <label><i class="fa-solid fa-user"></i></label>
+                    <span id="name"></span>
+                </div>
+                <div>
+                    <label><i class="fa-solid fa-location-dot"></i></label>
+                    <span id="location"></span>
+                </div>
+                <div>
+                    <label><i class="fa-solid fa-phone"></i></label>
+                    <span id="phone"></span>
+                </div>
+                <div>
+                    <label><i class="fa-solid fa-calendar-days"></i></label>
+                    <span id="dob"></span>
+                </div>
+            </div>
+            <!-- BUTTON -->
+            <div>
+                <button onclick="randomUser()"
+                    class="bg-gradient-to-r from-indigo-500  px-6 py-2 rounded-lg hover:bg-red-500">Next</button>
+            </div>
+        </div>
+    </section>
+    <script src="./randomUser.js"></script>
+</body>
+
+</html>
